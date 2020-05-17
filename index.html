@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Caladea:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+        <title>Exam_corregit</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body{
+                width: 100%;
+                cursor: default;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            #info{
+                font-size: 10px;
+            }
+            #pal{
+                color: red;
+            }
+            
+            nav{
+                font-size: 14px;
+                z-index: 2;
+                font-weight: 700;
+                height: 100px;
+                width: 100%;
+            }
+            .navigation{
+                padding: 0.5em 0 0 0;
+                width: 40%;
+            }
+            .navigation a{
+                margin: 0 1.5em 0 0;
+            }
+            .navigation a:hover{
+                cursor: pointer;
+                border-bottom: 1px solid red;
+            }
+            header{
+                width: 100%;
+                font-family: var;
+                padding: 2em 2em;
+                width: 100%;
+                display: flex;
+                position: fixed;
+            }
+            .logo{
+                padding: 0.5em 0 0 0;
+                justify-content: center;
+                align-content: center;
+                object-position: center;
+                margin-right: 48%;
+            }
+            #lupa{
+                padding: 0.5em 0 0 0;
+                color: black;
+            }
+            main{
+                font-family: var;
+            }
+            h1{
+                font-weight: 700;
+            }
+            .grup1{
+                display: flex;
+                background-color: white;
+            }
+            .cont_text{
+                margin-top: 20%;
+                padding: 0 1em 0 2em;
+                width: 50%;
+                height: 50%;
+                text-align: center;
+            }
+            .cont_img{
+                width: 50%;
+                height: 50%;
+                overflow: hidden;
+            }
+            .grup2{
+                height: 100%;
+                padding: 5em;
+                text-align: center;
+                background-color: orange;
+            }
+            .grid_img img{
+                object-fit: cover;
+                overflow: hidden;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+            .grid_img main{
+                padding: 0 4em;
+            }
+            .grid_img>div{
+                display: flex;
+                flex-direction: column;
+                padding: 2px;
+            }
+            .grid_img{
+                display: grid;
+                grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+            }
+            .item-1{
+                grid-row-start: 1;
+                grid-row-end: 1;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .item-5{
+                grid-row-start: 2;
+                grid-row-end: 2;
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+            footer{
+                font-family: var;
+                font-size: 12px;
+                background: gray;
+                padding: 10em;
+                color: white;
+            }
+            .footgrid{                
+                display: grid;
+                grid-template: repeat(1,1fr)/repeat(4,1fr);
+                grid-gap: 20px;
+            }
+            .links:hover{
+                cursor: pointer;
+                opacity: 0.5;
+                transition: 0.6s opacity;
+            }
+            .section_p{
+                font-weight: 700;
+                color: gainsboro;
+            }
+            .info{
+                margin-top: 20em;
+            }
+            #access{
+                margin-top: 1em;
+            }
+            @media (min-device-width: 100px) and (max-device-width: 420px){
+                .navigation{
+                    font-size: 8px;
+                }
+                h1{
+                    font-size: 16px;
+                }
+                main{
+                    font-size: 10px;
+                }
+                footer{
+                    font-size: 5px;
+                }
+                .grid_img{
+                    grid-template: repeat(4,1fr)/repeat(2,1fr);  
+                }
+            }
+            @media (min-device-width: 420px) and (max-device-width: 480px){
+                .navigation{
+                    font-size: 8px;
+                }
+                h1{
+                    font-size: 18px;
+                }
+                main{
+                    font-size: 12px;
+                }
+                footer{
+                    font-size: 5px;
+                }
+                .grid_img{
+                    grid-template: repeat(4,1fr)/repeat(2,1fr);  
+                }
+            }
+            @media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+                .navigation{
+                    font-size: 14px;
+                }
+                h1{
+                    font-size: 24px;
+                }
+                main{
+                    font-size: 20px;
+                }
+                footer{
+                    font-size: 12px;
+                }
+                .grid_img{
+                    grid-template: repeat(4,1fr)/repeat(3,1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+      <header>
+           <nav>
+                 <div class="navigation">
+                      <a>Products</a>
+                      <a>Stocklist</a>
+                      <a>About us</a>
+                 </div>
+            </nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+                <a href="#" id="lupa"><i class="fas fa-search"></i></a>
+        </header>
+        <div class="container-fluid">
+           <main>
+            <div class="grup1">
+               <div class="cont_img">
+                    <img src="img/baixa.jpeg" alt="">
+                </div>
+                <div class="cont_text">
+                    <h1>Lift the blind to let in the light. A moment of calm before the day begins.</h1>
+                    <p id="info">Featuring <a id="pal">Cherry sofa</a> and <a id="pal">Kile coffee table</a></p>
+                </div>
+            </div>
+            <div class="grup2">
+                <h1>Time for Living</h1>
+                <p>Take time for life’s little moments. Browsing the news as you eat breakfast. Setting the table for hungry guests. Sinking in to your favourite armchair. At Tolv, your daily rituals are at the heart of our design. We make furniture to give you your best day, every day.</p>
+                <p id="info">Find out more <a id="pal">About us</a></p>
+            </div>
+    <div class="grid_img">
+                   <div class="item-1">
+                       <img src="img/baixa%20(1).jpeg" alt="">
+                    </div>
+                   <div class="item-2">
+                       <img src="img/baixa%20(2).jpeg" alt="">
+                   </div>
+                   <div class="item-3">
+                       <img src="img/baixa%20(3).jpeg" alt="">
+                   </div>
+                   <div class="item-4">
+                       <img src="img/baixa%20(4).jpeg" alt="">
+                   </div>
+                   <div class="item-5">
+                       <img src="img/baixa%20(5).jpeg" alt="">
+                   </div>
+                   <div class="item-6">
+                       <img src="img/baixa%20(6).jpeg" alt="">
+                   </div>
+            </div>
+           </main>
+        <footer>
+              <div class="footgrid">
+               <section class="sec1">
+                   <p class="section_p">Products:</p>
+                   <div class="links">
+                       <p>Lounge Chairs</p>
+                   </div>
+                    <div class="links"> 
+                       <p>Sofas</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Daybeds</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Poufs</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Dining Chairs</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Stools</p>
+                    </div>
+                      <div class="links"> 
+                       <p>Tables & Desks</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Storage</p>
+                   </div>
+               </section>
+            <section class="sec2">
+                   <p class="section_p">Useful information:</p>
+                   <div class="links">
+                   </div>
+                          <p>Our stockists</p>
+                    <div class="links"> 
+                       <p>Our designers</p>
+                    </div>
+                    <div class="links"> 
+                       <p>Product care</p>
+                   </div>
+               </section>
+            <section class="sec3">
+                   <p class="section_p">Company:</p>
+                   <div class="links">   
+                       <p>News</p>
+                   </div>
+                    <div class="links"> 
+                       <p>About us</p>
+                   </div>
+                    <div class="links"> 
+                       <p>Contact us</p>
+                   </div>
+               </section>
+             <section class="sec4">
+                   <p class="section_p">Connect with us:</p>
+                   <div class="links">
+                       <p>Facebook</p>
+                   </div>
+                   <div class="links"> 
+                       <p>Instagram</p>
+                   </div>
+                   <div class="links"> 
+                       <p>Blank</p>
+                   </div>
+                   <p class="section_p" id="access">Access to:</p>
+                   <div class="links">
+                       <p>Client login</p>
+                   </div>
+               </section>
+               </div>
+               <p id="info" class="info">All rights reserved Tolv © 2020</p>
+           </footer>
+        </div>
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
